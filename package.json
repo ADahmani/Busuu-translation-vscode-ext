@@ -1,0 +1,59 @@
+{
+  "name": "busuu-translation-toolbox",
+  "displayName": "busuu-translation-toolbox",
+  "description": "Manage busuu's translation library",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "views": {
+      "explorer": [
+        {
+          "type": "webview",
+          "id": "i18nToolboxView",
+          "name": "Busuu's Translation toolbox",
+          "visibility": "visible"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "busuu-i18n-toolbox.addTranslation",
+        "title": "Add translation"
+      }
+    ],
+    "keybindings": [
+      {
+          "command": "busuu-i18n-toolbox.addTranslation",
+          "key": "ctrl+alt+i",
+          "mac": "shift+cmd+i"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "node ./esbuild.js",
+    "watch": "node ./esbuild.js --watch",
+    "package": "NODE_ENV=production node ./esbuild.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.0.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.74.0",
+    "@vscode/test-electron": "^2.2.0",
+    "esbuild": "0.16.17",
+    "eslint": "^8.28.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.1.0",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "path": "^0.12.7"
+  }
+}
