@@ -2,7 +2,7 @@ import * as vscode from "vscode";
 import path from 'path';
 import season from 'season';
 import {addPropsToFile} from './utils';
-const PROJECT_NAME = '/verbling-mobile-old/';
+const PROJECT_NAME = '/busuu-frontend-webapp/';
 const TRANSLATION_FILE = '/source-frontend-webapp.json';
 
 export default class I18nToolboxProvider implements vscode.WebviewViewProvider {

@@ -15862,7 +15862,7 @@ var addPropsToFile = function(obj, subKeys, val) {
 };
 
 // src/I18nToolboxProvider.ts
-var PROJECT_NAME = "/verbling-mobile-old/";
+var PROJECT_NAME = "/busuu-frontend-webapp/";
 var TRANSLATION_FILE = "/source-frontend-webapp.json";
 var I18nToolboxProvider = class {
   constructor(_extensionUri) {

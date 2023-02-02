@@ -2,7 +2,9 @@
   "name": "busuu-translation-toolbox",
   "displayName": "busuu-translation-toolbox",
   "description": "Manage busuu's translation library",
-  "version": "1.0.0",
+  "publisher": "adahmani",
+  "repository": "https://github.com/ADahmani/Busuu-translation-vscode-ext",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.74.0"
   },
