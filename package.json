@@ -3,7 +3,11 @@
   "displayName": "busuu-translation-toolbox",
   "description": "Manage busuu's translation library",
   "publisher": "adahmani",
-  "repository": "https://github.com/ADahmani/Busuu-translation-vscode-ext",
+  "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ADahmani/Busuu-translation-vscode-ext"
+  },
   "version": "1.0.1",
   "engines": {
     "vscode": "^1.74.0"
